@@ -19,7 +19,7 @@ typedef struct CList_
 } CList;
 
 // Public interfaces
-void clist_init(CList *list, void(*destory)(void *data));
+void clist_init(CList *list, void(*destroy)(void *data));
 void clist_destroy(CList *list);
 int clist_ins_next(CList *list, CListElmt *element, const void *data);
 int clist_rem_next(CList *list, CListElmt *element, void **data);
